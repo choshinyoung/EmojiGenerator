@@ -10,7 +10,7 @@
 
 커스텀 커맨드를 사용해 폰트, 색, 크기를 바꿀 수 있습니다.
 
-상태 커맨드로 서버들의 이모지 사용량을 확인할 수 있습니다.
+상태 커맨드로 서버들의 이모지 사용량을 확인할 수 있고, 제거 커맨드로 원하는 이모지를 제거할 수 있습니다.
 
 ## 사용방법
 
@@ -24,3 +24,6 @@
 [Discord.Net](https://github.com/discord-net/Discord.Net)  
 [KoreanString](https://github.com/powerumc/KoreanString)  
 [NGif](https://github.com/avianbc/NGif)
+
+ <img src="img/capture2.png" title="생성이미지"></img><br>
+ <img src="img/capture1.png" title="커스텀이미지"></img>
