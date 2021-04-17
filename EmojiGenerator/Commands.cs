@@ -1,4 +1,4 @@
-﻿using Discord.Commands;
+using Discord.Commands;
 using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -32,7 +32,7 @@ namespace EmojiGenerator
         [Command("생성")]
         public async Task Add([Remainder]string text)
         {
-            if (Program.Owners.Contains(Context.User.Id))
+            if (!Program.Owners.Contains(Context.User.Id))
             {
                 await Utility.SendEmbedMessage(Context, "이 커맨드를 실행할 권한이 없습니다.");
                 return;
@@ -56,7 +56,7 @@ namespace EmojiGenerator
         [Command("커스텀")]
         public async Task Custom(string name, string fontName, string color, string fontSize, [Remainder] string text)
         {
-            if (Program.Owners.Contains(Context.User.Id))
+            if (!Program.Owners.Contains(Context.User.Id))
             {
                 await Utility.SendEmbedMessage(Context, "이 커맨드를 실행할 권한이 없습니다.");
                 return;
@@ -137,7 +137,7 @@ namespace EmojiGenerator
         [Command("제거")]
         public async Task Delete(string text)
         {
-            if (Program.Owners.Contains(Context.User.Id))
+            if (!Program.Owners.Contains(Context.User.Id))
             {
                 await Utility.SendEmbedMessage(Context, "이 커맨드를 실행할 권한이 없습니다.");
                 return;
